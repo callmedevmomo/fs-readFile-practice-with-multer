@@ -1,0 +1,9 @@
+extends layout/main.pug
+
+block content
+    .form-container
+        form(action=routes.home,method="post",enctype="multipart/form-data")
+            label(for="file") ✏️Make Your text
+            .form-container__block
+                input(type="file",name="textFile",id="file",required=true,accept="text/*")
+                input(type="submit",value="Upload Text") 
